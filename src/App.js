@@ -1,16 +1,15 @@
 import React from 'react'
+import { Button } from '@material-ui/core'
+// import { Link } from 'react-router-dom'
 
 function App() {
-  React.useEffect(() => {
-    const getData = async () => {
-      const res = await fetch('/api/endpoint') // * <-- replace with your endpoint
-      const data = await res.json()
-      console.log(data)
-    }
-    getData()
-  })
 
-  return <h1>Hello World</h1>
+
+  return (
+    
+    <Button variant="contained" color="primary">Hellooo</Button>
+
+  )
 }
 
 export default App
